@@ -1,0 +1,27 @@
+*{
+    margin:0;padding: 0;box-sizing: border-box;
+}
+.container{
+    widows: 1170px;
+    height: auto;
+    margin-left: 360px;
+    margin-right: 360px;
+}
+.header{
+    background-color: #082759;
+    padding:50px 50px 17px 17px;
+    font-family: Arial,Helvetical,sans-serif;
+}
+h2{
+    float: left;
+    font-family: 'Segoe UI';
+} 
+a{
+    display: block;
+    float: right;
+    font-size: 16px;
+    letter-spacing:1px;
+    color:white;
+    padding:50px 50px 17px 17px;
+    text-transform: uppercase;
+}

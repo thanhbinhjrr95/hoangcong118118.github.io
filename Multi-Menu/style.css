@@ -1,0 +1,65 @@
+*{ margin: 0px; padding: 0px }
+body{
+    
+}
+img{
+    max-width: 100%;
+    float:left;
+    padding-left: 20px;
+}
+/*---------Navbar--------*/
+#navbar{
+    width: 1000px;
+    height: 50px;
+    margin:10px auto;
+    background-color: brown;
+    border: 2px solid #15527e; 
+}
+#navbar ul{
+    width: 1000px;
+    height: 50px;
+}
+#navbar ul li{
+    position:relative;
+    float: left;
+    width: auto;
+    height: 30px;
+    list-style: none;
+    padding: 14px;
+}
+#navbar ul li a{
+    font-family: Tahoma,Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+
+}
+#navbar ul li:hover {
+    cursor: pointer;
+}
+#navbar ul li:hover ul {
+    display:block;
+}
+#navbar ul li ul{
+    display: none;
+    width: 150px;
+    height: auto;
+    background-color: brown;
+    position: absolute;
+    top: 50px;
+}
+#navbar ul li ul li{
+    float: none;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px;   
+}
+#navbar ul li ul li a{
+    font-weight: bold;
+}    
+#navbar ul li ul li a:hover{
+    text-decoration: underline;
+}

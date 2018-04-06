@@ -1,0 +1,126 @@
+
+*{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+body{
+	font-family: arctic,arial,helvetical,sans-serif;
+	font-weight: 500;
+	background-color: #ffffff;
+}
+.wrap1{
+	max-width: 1200px;
+	margin: 0 200px 0 200px;
+}
+.menu {
+    /*position: absolute;*/
+    float: left;
+    margin-bottom: 15px;
+    width: 200px;
+}
+.list-menu {
+	position: absolute;
+    font-size: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+.list-menu > li a.selected {
+    background: grey;
+    color: #fff;
+ }   
+.list-menu > li a{
+    font-family:'Patrick Hand', cursive;
+    display: block;
+    cursor: pointer;
+    color: #676767;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 1px;
+    margin: 0 0px 0px 0;
+    padding: 8px;
+    background-color: white;
+}   
+.list-menu > li a:hover {
+    text-decoration: none;
+    background: #333333;
+    color: #fff;
+}    
+h1{
+	margin: 25px 0 10px 0;
+	font-size: 2.5em;
+	line-height: 1.5em;
+	font-weight:bold;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #8e0b00;
+	text-align: center;
+	animation: title 5s ease infinite;
+}
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+.wrap{
+	margin: auto;
+	max-width: 1000px;
+	overflow: hidden;
+} 
+.col{
+	width: 33.3333333%;
+	float:left;
+	padding: 10px;
+	position: relative;;
+}
+.thumb{
+	width: 100%;
+	padding: 4px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	background-color: #e0d5be;
+}
+.thumb img {
+	vertical-align: middle;
+	width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 2px;
+	margin:3px 3px 3px 3px;
+	border-radius: 75%;
+}
+.thumb:hover{
+	opacity:0.5;
+	border: 1px solid #777;
+}
+.des{
+ text-align: center;
+}
+#footer > p{
+	margin: 25px 10px 10px 10px;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #6F3662;
+ 	float: right;
+ 	-moz-animation:fadeinout 5s linear infinite;
+ 	animation:fadeinout 5s linear infinite;
+}
+@-moz-keyframes fadeinout {
+	 0%{  opacity: 0;
+		transform: translateX(0);		
+	 }
+	 50%{  opacity: 1;
+		transform: translateX(-1000px);		
+	 }
+	 100% {  opacity: 0;
+	 	transform: translateX(0);}
+} 

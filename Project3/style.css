@@ -1,0 +1,251 @@
+@font-face {
+font-family:font_strong;
+src:url(‘fonts/Chicle-Regular.ttf’) format(‘truetype’)
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1170px;
+    height:auto;
+    font-family:'Chicle-Regular',Helvetica,sans-serif;
+    margin-left: 360px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.break{
+    border: 2px solid pink;
+}
+
+/* wrap main-menu */
+.main-menu {
+    overflow: hidden;
+    background-color: #dad;
+    padding-left: 240px; 
+    font-family: Arial, Helvetica, sans-serif;
+}   
+
+.main-menu a {
+    float: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    margin:0 15px;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.main-menu__item-lv-1{
+    float: left;
+    overflow: hidden;
+}
+
+.main-menu__item-lv-1 .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 10px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.fa-caret-down{
+    padding-left: 7px;
+}
+.main-menu a:hover, .main-menu__item-lv-1:hover .dropbtn {
+    background-color: #e45c;
+}
+
+.menu-2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.menu-2 a:hover {
+    background-color: #ddd;
+}
+
+.main-menu__item-lv-1:hover .menu-2 {
+    display: block;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    border-radius: 10px;
+    box-shadow: 1px 1px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  background-color: #dddace;
+  max-width: 1170px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 280px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 310px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.active, .dot:hover {
+  background-color: black;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+.column img{
+    opacity:0.9;
+    cursor: pointer;
+    border-radius: 30%;
+}
+.column img:hover{
+    opacity: 1;
+}
+.des{
+    padding-top: 10px; 
+    text-align: center;
+    font-size: 18px;
+    color: green;
+}
+
+.column2{
+    float: left;
+    padding:80px 10px 10px 10px;
+}
+.column2 img{
+    opacity:0.9;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.column2 img:hover{
+    opacity: 1;
+}
+.des2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: green;
+}
+.row3{
+    float: right;
+    width: 35%;
+    height: 700px;
+    padding:80px 10px;
+}
+.row3 .column3{
+    border:2px solid orange;
+}
+
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: red;
+}
+.column3 img:hover{
+    opacity: 0.8;
+    border-radius: 10px;
+}
+p{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+    color: black;
+}
+h4{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: red;
+}
+.fa-youtube, .fa-twitter, .fa-facebook-square, .fa-instagram {
+    padding:20px 20px;
+}
+input{
+  width: 200px;
+  padding: 5px;
+  border:1px solid black;
+}
+.row3 button{
+  margin-left: 20px;
+  width: 70px;
+  height: 20px;
+}
+.footer{
+    float: left;
+    width: 1170px;
+    height: 50px;
+}
+.footer p{
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+}
+.footer i{
+  position: relative;
+  top:5px;
+  left:450px;
+}

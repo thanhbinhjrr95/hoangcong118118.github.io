@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	text-align: center;
+	font-size:40px;
+	font-weight: bold;
+}
+.list-wrap {
+    width: 100%;
+    position: absolute;
+    float: left;
+    margin: 1em 0em 1em 0em;
+}    
+.col-1{
+	width: 100%;
+	float:left;
+}
+.col-1 li{
+	width: 22.5%;
+	display: inline-block;
+	border: 1px solid #E4E4E4;
+	box-sizing: border-box;
+	padding: 2px;
+	margin:5px 5px 5px 5px;
+}
+div.desc {
+    text-align: center;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .list-wrap,.col-1 {
+    width:80%;
+  }
+  .list-wrap,.col-1 {
+    width:100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .list-wrap,.col-1 {
+    width:100%;
+  }
+}
+

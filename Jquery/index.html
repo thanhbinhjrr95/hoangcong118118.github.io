@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Calculator</h2>
+
+    <table class="table table-bordered">
+
+      <tbody>
+        <tr >
+          <td colspan="5"><input id="input" type="text"> </input></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" onclick="binhphuong(input.value)" value="" >x <sup>2</sup> </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="giaithua(input.value)" value="!" > ! </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="canbachai(input.value)" value="√" > √ </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value=input.value.slice(0,input.value.length-1)" > DEL </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value=this.value" value=""> AC </button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="7" > 7 </button> </td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="8" > 8 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="9" > 9 </button></td>
+          <td colspan="2"><button id="db" type="button" class="btn btn-primary" > Change Theme</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="4"> 4 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="5"> 5 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="6"> 6 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="*" > <b>*</b> </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="/" > <b>&#247;</b> </button></td>
+        </tr>
+        <tr>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="1"> 1 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="2" > 2 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="3" > 3 </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="+" > <b>+</b> </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="-"> <b>-</b> </button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button id="db" type="button" class="btn btn-primary" onclick="input.value+=this.value" value="0"> 0 </button></td>
+
+          <td><button type="button" class="btn btn-primary" onclick="layphantram(input.value)" value="%" > % </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value+=this.value" value="." > <b>.</b> </button></td>
+          <td><button type="button" class="btn btn-primary" onclick="input.value=eval(input.value)" value ="="> <b>=</b> </button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+  </body>
+  </html>

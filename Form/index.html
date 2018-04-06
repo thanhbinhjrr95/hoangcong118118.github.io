@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <section id="container">
+    <h2>Đăng kí thành viên</h2>
+    <form name="ttw" id="ttw-form" method="get" action="result.html">
+
+      <section id="aligned">
+        <input type="text" id="name" placeholder="Họ và tên" autocomplete="on" class="txtinput">
+        <input type="date"  id="bday" placeholder="Ngày sinh" tabindex="1" class="txtinput">
+          <input type="radio" checked="checked" name="radio" id="gender"><label>Nam</label>
+          <input type="radio" name="radio" id="gender"><label>Nữ</label>
+          <input type="radio" name="radio" id="gender"><label>Khác</label>
+        <input type="text"  id="add" placeholder="Địa chỉ" autocomplete="off" class="txtinput">
+        <input type="tel"  id="telephone" placeholder="Số điện thoại di động"  class="txtinput">
+        <input type="email" id="email" placeholder="Email của bạn" autocomplete="off"  class="txtinput">
+        <input type="password" id="password" placeholder="Mật khẩu" autocomplete="off"  class="txtinput">
+        <input type="submit" value="Đăng kí" id="submit" >
+      </section>
+
+    </form>
+  </section>
+</body>
+</html>

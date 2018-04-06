@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('images/bg-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  color: #9E9E9E;
+  margin-top: 30px;
+}
+
+.w3-slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  padding: 5px;
+}
+.w3-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+.w3-mySlides{
+  width: 100%;
+}
+.w3-card {
+  background: white;
+  width: 300px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 9999;
+}
+
+.w3-card_image {
+  position: relative;
+  height: 230px;
+  margin-bottom: 35px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.w3-card_image:hover{
+  opacity: 0.8;
+}
+.w3-card_image-dung {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+  img {
+    position: absolute;    
+    top: -65px;
+    left: -70px;
+  }
+}
+
+.w3-card_image-my {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+  img {
+    position: absolute;    
+    top: -34px;
+    left: -37px;
+  }
+}
+
+.w3-card_image-huyen {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+  img {
+    position: absolute;    
+    top: -30px;
+    left: -25px;
+  }
+}
+
+.w3-card_image-thanh{
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img {
+    position: absolute;    
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.w3-card_image-son {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+  img {
+    position: absolute;    
+    top: -28px;
+    left: -10px;
+  }
+}
+
+.w3-card_image-binh{
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img {
+    position: absolute;    
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.w3-card_image-linh{
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+  img {
+    position: absolute;    
+    top: -21px;
+    left: -37px;
+  }
+}
+
+.w3-card-name {
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.w3-card-description {
+  padding: 15px;
+  margin-bottom: 5px;  
+}
+
+.w3-winter-is-coming, .w3-snow {
+  z-index: 100;
+  pointer-events: none;
+}
+
+.w3-winter-is-coming {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.w3-snow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: falling linear infinite both;
+          animation: falling linear infinite both;
+  -webkit-transform: translate3D(0, -100%, 0);
+          transform: translate3D(0, -100%, 0);
+}
+.w3-snow--near {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+  background-size: contain;
+}
+.w3-snow--near + .w3-snow--alt {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.w3-snow--mid {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png");
+  background-size: contain;
+}
+.w3-snow--mid + .w3-snow--alt {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.w3-snow--far {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png");
+  background-size: contain;
+}
+.w3-snow--far + .w3-snow--alt {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+            transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+            transform: translate3D(7.5%, 100%, 0);
+  }
+}
+
+@keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+            transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+            transform: translate3D(7.5%, 100%, 0);
+  }
+}
+/* Dành cho điện thoại */
+@media all and (min-width: 320px) {
+  .w3-wrapper,.w3-mySlides{
+    width: 100%;
+  }
+}
+  
+/* Dành cho màn hình desktop */
+@media all and (min-width: 1280px) {
+
+}
+
+

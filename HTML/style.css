@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	background-color: #dadada;
+}
+#header{
+	line-height: 1.5;
+	text-align: center;
+	font-size: 16px;
+	font-family: arial,helvetical,sans-serif;
+	text-transform: uppercase;
+}
+#information h1{
+	font-family: arial,helvetical,sans-serif;
+	text-align: center;
+	font-size: 40px;
+}
+#information p{
+	text-indent: 200px;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#description{
+	text-indent: 200px;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+#description p:last-child{
+	text-indent:400px;
+}
+.footer{
+	line-height: 1.5;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+	direction: rtl;
+	padding-left: 50%;
+}
+#signature{
+	font-weight: bold;
+}

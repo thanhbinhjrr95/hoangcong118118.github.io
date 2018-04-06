@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+.container{
+	margin: auto;
+}
+h2{
+	text-align: center;
+    text-transform: uppercase;
+}
+.table {
+    background-color: black;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 250px;
+    border: 5px solid brown;
+    border-collapse: collapse;
+}
+
+#input {
+    width: 380px;
+    height: 60px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+}
+#db {
+	width: 140px;
+    height: 60px;
+}
+.newtable{
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    width: 250px;
+    border: 5px solid black;
+    background-color:grey;
+}

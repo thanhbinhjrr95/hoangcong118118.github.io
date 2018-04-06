@@ -1,0 +1,138 @@
+
+*{ 
+  margin: 0;
+  padding: 0;
+}
+ body { 
+  height: 101%; 
+  font-size: 62.5%; 
+  font-family:Arial, Tahoma, sans-serif; 
+  color: #333; 
+  background: #fff;
+  padding-top: 10px; 
+}
+
+h2 { 
+  border-bottom: 1px solid black; 
+  border-top: 1px solid black; 
+  color: #363636;
+  font-family: Georgia, serif; 
+  font-size: 2.6em; 
+  line-height: 1.8em; 
+  margin-bottom: 25px; 
+  padding: 12px 0; 
+  text-align: center; 
+}
+
+/** main blocks **/
+#container { 
+  display: block;
+  max-width: 600px;
+  margin: 0 auto; 
+  padding: 20px 15px; 
+  background: #fff; 
+  border-radius: 6px; 
+  -webkit-border-radius: 6px; 
+  -moz-border-radius: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;  
+}
+
+
+/** the form elements **/
+#ttw-form .txtinput { 
+  display: block;
+  font-family: Arial, sans-serif;
+  border:1px solid #dedede;
+  margin-bottom: 20px;
+  font-size: 1.55em;
+  padding: 11px 25px;
+  width: 90%;
+  color: #777;
+}
+
+#ttw-form .txtinput:focus { 
+  color: #333;
+  border-color: rgba(41, 92, 161, 0.4);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(41, 92, 161, 0.6);
+  outline: 0 none; 
+}
+
+#ttw-form input#name {
+  background: #fff 5px 4px no-repeat;
+}
+#ttw-form input#bday {
+  background: #fff  5px 4px no-repeat;
+}
+#ttw-form input#add {
+  background: #fff  5px 4px no-repeat;
+}
+#ttw-form input#email {
+  background: #fff  5px 4px no-repeat;
+}
+#ttw-form input#telephone {
+  background: #fff  5px 4px no-repeat;
+}
+#ttw-form input#password {
+  background: #fff  5px 4px no-repeat;
+}
+#ttw-form label{
+  font-size: 16px;
+  padding: 5px;
+}
+#ttw-form input#submit {
+  font-size: 18px;
+  padding: 5px;
+  border: 2px solid black;
+}
+#ttw-form #aligned { 
+  box-sizing: border-box; 
+  float: left; 
+  width: 400px; 
+  margin-right: 50px; 
+}
+
+/** all devices and responsive browser windows **/
+@media screen and (max-width: 800px) {
+  body {
+    padding: 10px 15px;
+  }
+  #container {
+    width: 100%;
+  }
+  #ttw-form #aligned {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+
+/* smaller screen dropoff *******/
+@media only screen and (max-width: 550px) {
+  #ttw-form .txtinput{
+    width: 80%;
+  }
+}
+
+/* iPhone Landscape ********/
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 10px 0px;
+  }
+}
+
+/* iPhone portrait *******/
+@media only screen and (max-width: 320px) {
+  body {
+    padding: 10px 0px;
+  }
+  #ttw-form .txtinput {
+    width: 70%;
+  }
+  #ttw-form #aligned {
+    overflow: hidden;
+  }
+}
