@@ -15,7 +15,6 @@ img{
 	border: 0px;
 }
 #header{
-	display: block;
 	position: absolute;
 	z-index: 1;
 	left: 0;
